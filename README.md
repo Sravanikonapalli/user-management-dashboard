@@ -29,7 +29,7 @@ A simple user management system built with React (frontend), Express (backend), 
 ## Setup Instructions
 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Sravanikonapalli/user-management-dashboard.git
 cd user-management-dashboard-forty4
 ```
 
