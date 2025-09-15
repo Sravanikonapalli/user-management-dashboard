@@ -80,6 +80,7 @@ Base URL (deployed): https://user-management-dashboard-9nys.onrender.com
 GET /
 Response:
 
+```json
 [
     {
     "id": 1,
@@ -94,6 +95,7 @@ Response:
     "longitude": 78.501
   }
 ]
+```
 
 2. Get user by ID
 
@@ -104,7 +106,7 @@ Example: /1
 
 POST /
 Request Body (JSON):
-
+```json
 {
   "name": "testcase",
   "email": "test@example.com",
@@ -116,17 +118,20 @@ Request Body (JSON):
   "latitude": "19.0760",
   "longitude": "72.8777"
 }
-
+```
 
 Response:
 
+```json
 { "userId": 2 }
+```
 
 4. Update user
 
 PUT /:id
 Request Body (JSON):
 
+```json
 {
   "name": "Alice Updated",
   "email": "alice.updated@example.com",
@@ -138,15 +143,17 @@ Request Body (JSON):
   "latitude": "19.0760",
   "longitude": "72.8777"
 }
-
+```
 
 Response:
-
+```json
 { "message": "User updated successfully" }
+```
 
 5. Delete user
 
 DELETE /:id
 Response:
-
+```json
 { "message": "User deleted successfully" }
+```
