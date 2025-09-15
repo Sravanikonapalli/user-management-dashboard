@@ -68,3 +68,85 @@ The frontend will run on http://localhost:3000 and communicate with the backend.
 **Delete User:** click the delete icon and confirm
 
 **Search Users:** type in the search bar by name or email
+
+-------
+## API Endpoints (for Postman)
+
+Base URL (local): http://localhost:5000
+Base URL (deployed): https://user-management-dashboard-9nys.onrender.com
+
+1. Get all users
+
+GET /
+Response:
+
+[
+    {
+    "id": 1,
+    "name": "sravani",
+    "email": "sravani@gmail.com",
+    "phone": "9381037572",
+    "company": "Forty4",
+    "street": "gattu kothakota",
+    "city": "madanapalle",
+    "zip": "517325",
+    "latitude": 13.556,
+    "longitude": 78.501
+  }
+]
+
+2. Get user by ID
+
+GET /:id
+Example: /1
+
+3. Add new user
+
+POST /
+Request Body (JSON):
+
+{
+  "name": "testcase",
+  "email": "test@example.com",
+  "phone": "9876543210",
+  "company": "XYZ Ltd",
+  "street": "Park Lane",
+  "city": "Mumbai",
+  "zip": "400001",
+  "latitude": "19.0760",
+  "longitude": "72.8777"
+}
+
+
+Response:
+
+{ "userId": 2 }
+
+4. Update user
+
+PUT /:id
+Request Body (JSON):
+
+{
+  "name": "Alice Updated",
+  "email": "alice.updated@example.com",
+  "phone": "9876500000",
+  "company": "XYZ Ltd",
+  "street": "Park Lane",
+  "city": "Mumbai",
+  "zip": "400001",
+  "latitude": "19.0760",
+  "longitude": "72.8777"
+}
+
+
+Response:
+
+{ "message": "User updated successfully" }
+
+5. Delete user
+
+DELETE /:id
+Response:
+
+{ "message": "User deleted successfully" }
