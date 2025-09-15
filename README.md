@@ -22,8 +22,8 @@ A simple user management system built with React (frontend), Express (backend), 
 2. Frontend -> Vercel
 
 # Live URLs
-- [Backend]()
-- [Fronted]()
+- [Backend](https://user-management-dashboard-9nys.onrender.com)
+- [Fronted](https://user-management-dashboard-silk.vercel.app/)
 -----
 
 ## Setup Instructions
